@@ -682,7 +682,7 @@ def project_to_basis(y3d, edges, los=[0, 0, 1], poles=[], regress=True, test=Fal
 
             if not regress:
                 # sum up the weighted y in each bin
-                weighted_y3d *= (2.*ell + 1.)
+                weighted_y3d  *= (2.*ell + 1.)
 
             if test:
                 factor         = numpy.zeros_like(mu)
